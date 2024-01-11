@@ -1,9 +1,9 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Poppins:ital,wght@1,100&family=Rubik+Glitch&display=swap');
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 400px) {
     *{
-      width: 80%;
+      width: 40%;
       padding: 0;
     }
   }
