@@ -6,6 +6,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html { font-size: 62.5% }
+
 .container {
     width: 100vw;
     height: 100vh;
@@ -24,20 +26,20 @@
 }
 
 .content h1 {
-    font-size: 100px;
+    font-size: 10rem;
     font-weight: bold;
     color: #fff;
     margin-bottom: 50px;
 }
 
 .content h3 {
-    font-size: 35px;
+    font-size: 3.5rem;
     color: #fff;
     margin-bottom: 50px;
 }
 
 .content a {
-    font-size: 23px;
+    font-size: 2.3rem;
     font-weight: bold;
     color: #fff;
     text-decoration: none;
@@ -110,41 +112,106 @@
     margin: 0 20px;
 }
 
-/* Media Query for Tablets */
-@media only screen and (max-width: 768px) {
-    .content {
-        padding: 0 20px;
-    }
+/* Respomsive media queries */
 
-    .navbar {
-        padding: 10px;
+/* 4k Screens */
+@media only screen and (max-width: 2560px){
+    .navbar a{
+        font-size: 2.2rem;
+        padding: 15px 25px;
     }
-
-    .navbar ul {
-        margin: 0;
+    .container{
+        padding: 0%;
     }
-
-    .navbar a {
-        padding: 10px;
+    .content h1{
+        font-size: 14rem;
+    }
+    .content h3{
+        font-size: 4.9rem;
+    }
+    .content a{
+        font-size: 2.6rem;
     }
 }
 
-/* Media Query for Phones */
-@media only screen and (max-width: 480px) {
-    .content {
-        padding: 0 10px;
+/* Large Laptops */
+@media only screen and (max-width: 1440px) {
+    .navbar a{
+        font-size: 1.6rem;
+        padding: 15px 18px;
     }
-
-    .navbar {
-        padding: 5px;
+    .container{
+        padding: 0%;
     }
-
-    .navbar ul {
-        margin: 0;
+    .content h1{
+        font-size: 8rem;
     }
-
-    .navbar a {
-        padding: 5px;
-        font-size: 14px;
+    .content h3{
+        font-size: 2.8rem;
+    }
+    .content a{
+        font-size: 1.8rem;
     }
 }
+
+/* Laptop screens */
+@media only screen and (max-width: 1230px) {
+    .navbar a{
+        font-size: 1.2rem;
+        padding: 15px 18px;
+    }
+    .container{
+        padding: 0%;
+    }
+    .content{
+        padding: 0px 100px;
+    }
+    .content h1{
+        font-size: 6rem;
+    }
+    .content h3{
+        font-size: 2rem;
+    }
+    .content a{
+        font-size: 1.2rem;
+    }
+}
+
+/* Tablets */
+@media only screen and (max-width: 745px) {
+    .navbar a{
+        font-size: 0.8rem;
+        padding: 15px 18px;
+    }
+    .container{
+        padding: 0%;
+    }
+    .content h1{
+        font-size: 4rem;
+    }
+    .content h3{
+        font-size: 1.4rem;
+    }
+    .content a{
+        font-size: 0.8rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Mobiles */
+@media only screen and (max-width: 745px) {
+    .content{
+        padding: 0px 40px;
+    }
+}
+
+/* Background video switching to portrait */
+@media screen and (orientation: portrait) {
+    .background-clip{
+      height: 100vh !important;
+      width: auto !important;
+      /* left: 50%;
+      top: 0;
+      transform: translateX(-50%); */
+    }
+  }
