@@ -64,9 +64,9 @@ body{
     margin: 27px;
 }
 
-.blog-box:hover{
+/* .blog-box:hover{
     transform;
-}
+} */
 
 .blog-img{
     width: 100%;
@@ -133,5 +133,14 @@ body{
 @media(max-width:1100px){
     .blog-box{
         width: 70%;
+    }
+}
+
+@media(max-width:500px){
+    .blog-box{
+        width: 100%;
+    }
+    #blog{
+        padding: 100px 20px;
     }
 }
